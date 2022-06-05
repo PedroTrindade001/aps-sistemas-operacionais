@@ -22,7 +22,6 @@ public class AppStart {
         List<Integer> processos = separador.separar(linhasArquivo.get(1));
 
         firstFit.executar(memoriaLivre, processos);
-
-
+        
     }
 }

@@ -11,7 +11,7 @@ public class Listar {
         for (int i = 0; i < processos.size(); i++)
         {
             System.out.print("   P" + (i+1) + "\t\t\t\t" +
-                    processos.get(i) + "\t\t\t\t");
+                    processos.get(i) + "\t\t");
             if (alocacao[i] != -1) {
                 alocacao[i] += 1;
                 System.out.print("  " + alocacao[i]);
@@ -33,8 +33,8 @@ public class Listar {
         for (int numero : memoriaLivre){
             media += numero;
         }
-        System.out.println(media + "\t\t\t" +
-                max.get() + "\t\t\t\t\t\t" + min.get());
+        System.out.println(media/memoriaLivre.size() + "\t\t\t" +
+                max.get() + "\t\t\t\t" + min.get());
     }
 
 }
